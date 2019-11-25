@@ -1,0 +1,105 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2019-11-14 15:39:54.078781",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "vehicle",
+  "driver",
+  "mode",
+  "is_active",
+  "column_break_3",
+  "working_time",
+  "start_location",
+  "end_location",
+  "distributor_details_section",
+  "distributor_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Link",
+   "label": "Vehicle",
+   "options": "Vehicle"
+  },
+  {
+   "fieldname": "driver",
+   "fieldtype": "Link",
+   "label": "Driver",
+   "options": "Driver"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "working_time",
+   "fieldtype": "Data",
+   "label": "Working Time"
+  },
+  {
+   "fieldname": "start_location",
+   "fieldtype": "Link",
+   "label": "Start Location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "end_location",
+   "fieldtype": "Link",
+   "label": "End Location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "distributor_details_section",
+   "fieldtype": "Section Break",
+   "label": "Distributor Details"
+  },
+  {
+   "fieldname": "distributor_table",
+   "fieldtype": "Table",
+   "options": "Distributor Table"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  },
+  {
+   "fieldname": "mode",
+   "fieldtype": "Select",
+   "label": "Mode",
+   "options": "\nIncoming\nOutgoing"
+  }
+ ],
+ "modified": "2019-11-20 21:50:54.178008",
+ "modified_by": "Administrator",
+ "module": "Dairy Management",
+ "name": "Vehicle Route",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

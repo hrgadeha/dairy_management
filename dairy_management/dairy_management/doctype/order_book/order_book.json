@@ -1,0 +1,100 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2019-11-22 23:28:53.348375",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "from_date",
+  "to_date",
+  "column_break_4",
+  "order_period",
+  "get_order",
+  "section_break_4",
+  "field_orders",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "From Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "To Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Order Book",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "field_orders",
+   "fieldtype": "Table",
+   "label": "Field Orders",
+   "options": "Order Book Item"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "order_period",
+   "fieldtype": "Select",
+   "label": "Order Period",
+   "options": "\nMorning\nEvening",
+   "reqd": 1
+  },
+  {
+   "fieldname": "get_order",
+   "fieldtype": "Button",
+   "label": "Get Field Order"
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2019-11-23 00:35:22.591060",
+ "modified_by": "Administrator",
+ "module": "Dairy Management",
+ "name": "Order Book",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

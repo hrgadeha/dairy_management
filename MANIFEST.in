@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include dairy_management *.css
+recursive-include dairy_management *.csv
+recursive-include dairy_management *.html
+recursive-include dairy_management *.ico
+recursive-include dairy_management *.js
+recursive-include dairy_management *.json
+recursive-include dairy_management *.md
+recursive-include dairy_management *.png
+recursive-include dairy_management *.py
+recursive-include dairy_management *.svg
+recursive-include dairy_management *.txt
+recursive-exclude dairy_management *.pyc

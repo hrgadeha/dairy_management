@@ -1,0 +1,52 @@
+{
+ "creation": "2019-11-23 00:02:15.481356",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "field_order",
+  "customer",
+  "sales_person",
+  "order_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "field_order",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Field Order",
+   "options": "Field Order"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "sales_person",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sales Person",
+   "options": "Sales Person"
+  },
+  {
+   "fieldname": "order_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Order Amount"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-11-23 00:08:00.596082",
+ "modified_by": "Administrator",
+ "module": "Dairy Management",
+ "name": "Order Book Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

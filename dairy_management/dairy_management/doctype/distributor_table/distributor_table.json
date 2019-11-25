@@ -1,0 +1,51 @@
+{
+ "creation": "2019-11-14 15:46:05.608301",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "distributor",
+  "location",
+  "distance",
+  "time"
+ ],
+ "fields": [
+  {
+   "fieldname": "distributor",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Distributor",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "distance",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Distance (KM)"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Time (HR:MM)"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-11-14 15:47:33.851328",
+ "modified_by": "Administrator",
+ "module": "Dairy Management",
+ "name": "Distributor Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
