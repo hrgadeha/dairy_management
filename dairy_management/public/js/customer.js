@@ -8,3 +8,10 @@ frappe.ui.form.on("Customer", "customer_group", function(frm) {
     });
 });
 
+frappe.ui.form.on('Customer', {
+	validate(frm) {
+		if(frm.doc.is_distributor){
+		    frm.set_value("link_with_distributor",frm.doc.customer_name);
+		}
+	}
+});

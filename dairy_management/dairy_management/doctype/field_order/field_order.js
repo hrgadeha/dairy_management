@@ -1,11 +1,12 @@
 // Copyright (c) 2019, Jamali Infocom and contributors
 // For license information, please see license.txt
 
-frappe.ui.form.on('Field Order', {
-	// refresh: function(frm) {
-
-	// }
-});
+/*frappe.ui.form.on('Field Order', {
+	onload: function(frm) {
+		frm.page.sidebar.remove();
+	    	frm.page.wrapper.find(".layout-main-section-wrapper").removeClass("col-md-10");
+}
+});*/
 
 cur_frm.add_fetch("item_code","item_name","item_name")
 cur_frm.add_fetch("item_code","standard_rate","rate")
@@ -68,12 +69,16 @@ frappe.ui.form.on('Field Order', {
 	qty(frm) {
 		frm.set_value("amount",(frm.doc.rate * frm.doc.qty));
 		frm.set_value("grand_total",(frm.doc.rate * frm.doc.qty));
+		if(frm.doc.gst_rate){
 		frm.set_value("grand_total",(((frm.doc.tax / 100) * frm.doc.amount)) + frm.doc.amount);
+		}
 	},
 	rate(frm) {
 		frm.set_value("amount",(frm.doc.rate * frm.doc.qty));
 		frm.set_value("grand_total",(frm.doc.rate * frm.doc.qty));
+		if(frm.doc.gst_rate){
 		frm.set_value("grand_total",(((frm.doc.tax / 100) * frm.doc.amount)) + frm.doc.amount);
+		}
 	},
 	tax(frm) {
 		frm.set_value("grand_total",(((frm.doc.tax / 100) * frm.doc.amount)) + frm.doc.amount);

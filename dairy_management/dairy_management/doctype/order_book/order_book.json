@@ -7,7 +7,6 @@
  "field_order": [
   "naming_series",
   "from_date",
-  "to_date",
   "column_break_4",
   "order_period",
   "get_order",
@@ -21,13 +20,6 @@
    "fieldtype": "Date",
    "in_list_view": 1,
    "label": "From Date",
-   "reqd": 1
-  },
-  {
-   "fieldname": "to_date",
-   "fieldtype": "Date",
-   "in_list_view": 1,
-   "label": "To Date",
    "reqd": 1
   },
   {
@@ -72,7 +64,7 @@
   }
  ],
  "is_submittable": 1,
- "modified": "2019-11-23 00:35:22.591060",
+ "modified": "2019-11-26 15:44:35.956013",
  "modified_by": "Administrator",
  "module": "Dairy Management",
  "name": "Order Book",

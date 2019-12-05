@@ -110,14 +110,14 @@
   "doctype": "Property Setter",
   "doctype_or_field": "DocField",
   "field_name": "naming_series",
-  "modified": "2019-11-23 00:18:25.219409",
+  "modified": "2019-11-26 15:30:11.875466",
   "name": "Field Order-naming_series-options",
   "parent": null,
   "parentfield": null,
   "parenttype": null,
   "property": "options",
   "property_type": "Text",
-  "value": "FO-.####"
+  "value": "FO/.##"
  },
  {
   "_assign": null,
@@ -130,13 +130,13 @@
   "doctype": "Property Setter",
   "doctype_or_field": "DocField",
   "field_name": "naming_series",
-  "modified": "2019-11-23 00:18:25.296488",
+  "modified": "2019-11-26 15:30:12.099044",
   "name": "Field Order-naming_series-default",
   "parent": null,
   "parentfield": null,
   "parenttype": null,
   "property": "default",
   "property_type": "Text",
-  "value": "FO-.####"
+  "value": "FO/.##"
  }
 ]

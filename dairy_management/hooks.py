@@ -92,7 +92,10 @@ fixtures = [
 			"Sales Person-user_id",
 			"Customer-link_with_distributor",
 			"Item Tax Template-tax",
-			"Field Order-auto_repeat"
+			"Field Order-auto_repeat",
+			"Delivery Note-retailer",
+			"Sales Order Item-retailer",
+			"Customer-is_distributor"
 		]
 	   ]
 	]
@@ -117,17 +120,15 @@ fixtures = [
         }
 ]
 
-# Document Events
+#Document Events
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-#	}
-# }
+doc_events = {
+	"Sales Order": {
+		"on_submit": "dairy_management.dairy_management.doctype.order_book.order_book.createDN"
+	}
+}
 
 # Scheduled Tasks
 # ---------------
